@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Card */
+.card {
+  width: 320px;
+  margin: 80px auto;
+  background-color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition:
+    transform 0.4s,
+    box-shadow 0.4s,
+    background-color 0.4s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  background-color: #273449;
+}
+/* Header  */
+.card__header {
+  padding-top: 25px;
+}
+/* Body */
+.card__body {
+  padding: 20px;
+}
+.card__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+}
+.card__name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card__role {
+  margin: 15px 0;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.card__description {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+.card__button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card__button--primary {
+  background-color: #3b82f6;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: transform 0.4s;
+}
+.card__button--primary:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
